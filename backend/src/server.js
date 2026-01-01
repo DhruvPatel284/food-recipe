@@ -16,14 +16,16 @@ app.use(express.json());
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
-
+//favorite adding
 app.post("/api/favorites", async (req, res) => {
   try {
+    // fetching body of request from mobile
     const { userId, recipeId, title, image, cookTime, servings } = req.body;
 
     if (!userId || !recipeId || !title) {
       return res.status(400).json({ error: "Missing required fields" });
     }
+  
 
     const newFavorite = await db
       .insert(favoritesTable)
