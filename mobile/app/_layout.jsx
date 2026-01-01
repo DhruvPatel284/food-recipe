@@ -4,6 +4,7 @@ import { tokenCache } from "@clerk/clerk-expo/token-cache";
 import SafeScreen from "@/components/SafeScreen";
 
 // this is the layout of app
+// this is for git bracnch mobile/ui
 export default function RootLayout() {
   return (
     <ClerkProvider tokenCache={tokenCache}>
