@@ -18,7 +18,7 @@ app.get("/api/health", (req, res) => {
 //favorite adding
 app.post("/api/favorites", async (req, res) => {
   try {
-    // fetching body of request
+    // fetching body of request from mobile
     const { userId, recipeId, title, image, cookTime, servings } = req.body;
 
     if (!userId || !recipeId || !title) {
