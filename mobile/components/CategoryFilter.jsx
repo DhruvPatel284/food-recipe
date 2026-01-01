@@ -1,3 +1,4 @@
+// this is categpry filter
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { Image } from "expo-image";
 import { homeStyles } from "../assets/styles/home.styles";
