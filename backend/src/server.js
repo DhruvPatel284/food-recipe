@@ -11,7 +11,7 @@ const PORT = ENV.PORT || 5001;
 if (ENV.NODE_ENV === "production") job.start();
 
 app.use(express.json());
-
+// hit there
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
