@@ -1,5 +1,5 @@
 import { pgTable, serial, text, timestamp, integer } from "drizzle-orm/pg-core";
-
+//this is schema
 export const favoritesTable = pgTable("favorites", {
   id: serial("id").primaryKey(),
   userId: text("user_id").notNull(),
