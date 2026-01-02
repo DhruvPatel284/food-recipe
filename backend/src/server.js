@@ -12,6 +12,7 @@ if (ENV.NODE_ENV === "production") job.start();
 
 app.use(express.json());
 
+//hi there
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
